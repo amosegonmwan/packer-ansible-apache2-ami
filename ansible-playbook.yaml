@@ -1,0 +1,12 @@
+- name: Update apt package list on Ubuntu
+  apt:
+    update_cache: yes
+
+- name: Upgrade all packages to the latest version
+  apt:
+    upgrade: dist
+
+- name: Install Apache2 on Ubuntu
+  apt:
+    name: apache2
+    state: present
